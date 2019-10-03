@@ -17,4 +17,4 @@ Button.defaultProps = {
 	mode: "primary"
 }
 
-export default Button
+export default Button;
