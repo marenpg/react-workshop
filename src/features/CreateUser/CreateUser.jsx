@@ -40,44 +40,45 @@ export const CreateUser = ({
 }) => {
 	return (
 		<div className={classes.form}>
+			<h1>Create user</h1>
 			<form>
 				<TextInput
 					label="Name"
 					required
 					value={name}
-					onChange={change(onPropChange, "name")}/>
+					onChange={change(onPropChange, "name")} />
 				<TextInput
 					label="Email"
 					required
 					value={email}
-					onChange={change(onPropChange, "email")}/>
-				<hr/>
+					onChange={change(onPropChange, "email")} />
+				<hr />
 				<TextInput
 					label="Password"
 					type="password"
 					required
 					value={password}
-					onChange={change(onPropChange, "password")}/>
+					onChange={change(onPropChange, "password")} />
 				<TextInput
 					label="Repeat password"
 					type="password"
 					required
 					value={retypePassword}
-					onChange={change(onPropChange, "retypePassword")}/>
-				<hr/>
+					onChange={change(onPropChange, "retypePassword")} />
+				<hr />
 				<TextInput
 					label="Nickname"
 					value={nickname}
-					onChange={change(onPropChange, "nickname")}/>
+					onChange={change(onPropChange, "nickname")} />
 				<NumericInput
 					label="Age"
 					value={age}
-					onChange={change(onPropChange, "age")}/>
+					onChange={change(onPropChange, "age")} />
 				<RadioInput
 					label="Level"
 					value={level}
 					choices={CHOICES}
-					onChange={change(onPropChange, "level")}/>
+					onChange={change(onPropChange, "level")} />
 				<div className={classes.controls}>
 					<Button type="button" mode="secondary" onClick={() => history.push("/")}>Cancel</Button>
 					<Button disabled={!isValid} onClick={() => 0}>Create user</Button>
